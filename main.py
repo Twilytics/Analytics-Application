@@ -5,7 +5,9 @@ import dash_html_components as html
 from dash.dependencies import Input, Output
 from apps import overview, privacy
 
-app = dash.Dash(__name__, suppress_callback_exceptions=True)
+app = dash.Dash()
+
+app.config.suppress_callback_exceptions = True
 
 app.layout = html.Div([
     dcc.Location(id='url', refresh=False),
