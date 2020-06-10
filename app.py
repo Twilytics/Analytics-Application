@@ -3,12 +3,13 @@ import dash_core_components as dcc
 import dash_html_components as html
 from dash.dependencies import Input, Output
 
-from apps import overview, privacy
+from apps import privacy, overview
 
 app = dash.Dash(__name__, suppress_callback_exceptions=True)
 
 # navigation
 app.layout = html.Div([
+    # represents the URL bar, doesn't render anything
     dcc.Location(id='url', refresh=False),
     html.H1('Navigation'),
     html.Br(),
@@ -25,14 +26,13 @@ server = app.server
 
 # routing based on navigation
 @app.callback(Output('page-content', 'children'),
-              [Input('url', 'pathname')])
+                   [Input('url', 'pathname')])
 def display_page(pathname):
     if pathname == '/':
         return overview.layout
-    if pathname == '/privacy':
+    elif pathname == '/controlling':
         return privacy.layout
     else:
-        print(pathname)
         return '404'
 
 
