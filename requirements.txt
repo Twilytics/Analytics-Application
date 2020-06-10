@@ -2,11 +2,13 @@ dash
 dash-core-components
 dash-html-components
 dash-renderer
+pandas
+pandas-datareader
+Werkzeug
+gunicorn
 decorator
 nbformat
 numpy
-pandas
-pandas-datareader
 plotly
 chardet
 click
@@ -15,4 +17,6 @@ python-dateutil
 pytz
 requests
 urllib3
-Werkzeug
+
+
+
