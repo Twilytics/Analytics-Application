@@ -41,6 +41,8 @@ services:
       - 3000:3000
     networks:
       - grafana
+    environment:
+      - GF_INSTALL_PLUGINS=grafana-piechart-panel
 
   app:
     build: ./app
