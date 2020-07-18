@@ -6,5 +6,6 @@ The job 001 pulls the raw data from the MongoDB. After that the three KPIs are c
 * Change rate
 * Equality factor
 * Trendsetter value
+
 Find more information at the wiki https://github.com/Twilytics/Analytics-Application/wiki/Trend-indicators
 
