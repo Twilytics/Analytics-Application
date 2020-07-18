@@ -12,7 +12,9 @@ try:
     cluster = MongoClient('mongodb+srv://:'+ pw + '')    
     db = cluster["trends"]
     collection_berlin = db["berlin"]
+    collection_berlin_raw = db["berlin_raw"]
     collection_stuttgart = db["stuttgart"]
+    collection_stuttgart_raw = db["stuttgart_raw"]
     logging.info('connected to db')
 
     # Authenticate to TwitterAPI
@@ -30,7 +32,9 @@ try:
 
     # Insert into MongoDB
     collection_berlin.insert_many(data_berlin)
+    collection_berlin_raw.insert_many(data_berlin)
     collection_stuttgart.insert_many(data_stuttgart)
+    collection_stuttgart_raw.insert_many(data_stuttgart)
     logging.info('inserted data to MongoDB')
 
     # Finally close connection to MongoDB
