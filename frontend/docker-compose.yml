@@ -42,6 +42,15 @@ services:
     networks:
       - grafana
 
+  app:
+    build: ./app
+    ports:
+      - 8081:80
+    volumes:
+      - app_data:/var/log
+    networks:
+      - grafana
+
   db:
     image: grafana/tns-db:latest
     ports:
