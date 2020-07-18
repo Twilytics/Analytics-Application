@@ -24,4 +24,5 @@ If you're running Docker for Desktop for macOS or Windows, Docker Compose is alr
 8. Choose "Configuration" and then "Data Sources"
 9. Select PostgreSQL database and SSL Mode = require
 10. Ask repository creator for Host, Database, User, and Password
-
+11. Choose dashboard and click on import
+12. Import the dashboard from "frontend/app/twilytics_dashboard_importable.json" 
