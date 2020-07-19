@@ -5,6 +5,7 @@ This project was developed for the course "338010 Data Engineering Project - Bui
 The Twilytics dashboard provides insights into the trends on Twitter based on real time data. Users can get informations, for example, about how trends change on Twitter in a respective city or how the trends between cities correlate. For this small university project, the cities Stuttgart and Berlin were analyzed.  
 
 ## Repository Structure
+- database: contains the database dump (more information in the [README.md of the folder](https://github.com/Twilytics/Analytics-Application/tree/master/database))
 - dataproc: PySpark script for getting raw data from the MongoDB, processing Twitter data distributively, and inserting it into the PostgreSQL database (more information in the [README.md of the folder](https://github.com/Twilytics/Analytics-Application/tree/master/dataproc))
 - frontend: Grafana dashboard that can be run locally (access to the database can be requested from [Alexander Stahl](mailto:as291@hdm-stuttgart.de?subject=[GitHub]Twilytics) or [Johannes Ströbele](mailto:js349@hdm-stuttgart.de?subject=[GitHub]Twilytics) (more information in the [README.md of the folder](https://github.com/Twilytics/Analytics-Application/tree/master/frontend))
 - twitter2mongo: Python script for requesting raw Twitter data and inserting it into MongoDB (more information in the [README.md of the folder](https://github.com/Twilytics/Analytics-Application/tree/master/twitter2mongo))
