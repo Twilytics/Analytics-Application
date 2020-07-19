@@ -6,7 +6,7 @@ Data is pulled from MongoDB, the Trend indicators are calculated and then insert
 * Equality factor
 * Trendsetter value
 
-Find more information at the wiki https://github.com/Twilytics/Analytics-Application/wiki/Trend-indicators
+Find more information at the [wiki page dashboard explanation](https://github.com/Twilytics/Analytics-Application/wiki/Dashboard-Explanation)
 ## Create Dataproc
 
 Mark the checkbox to use component-gateways
