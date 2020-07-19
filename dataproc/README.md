@@ -1,6 +1,5 @@
 # Dataproc
-## Job 001: MongoDb -> Dataproc -> PostgreSQL
-The job 001 pulls the raw data from the MongoDB. After that the three KPIs are calculated. The KPIs are then inserted into the PostgreSQL.
+Data is pulled from MongoDB, the Trend indicators are calculated and then inserted into the PostgreSQL.
 
 ## Trend indicator
 * Change rate
