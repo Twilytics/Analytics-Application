@@ -26,4 +26,5 @@ If you're running Docker for Desktop for macOS or Windows, Docker Compose is alr
 10. Select PostgreSQL database and SSL Mode = require
 11. Ask repository creator for Host, Database, User, and Password
 12. Choose dashboard and click on import
-13. Import the dashboard from "frontend/app/twilytics_dashboard_importable.json" 
+13. Import the dashboard with real time Twitter data from "frontend/app/twilytics_dashboard_realtime_importable.json" 
+14. Import the dashboard with mocked Twitter data from "frontend/app/twilytics_dashboard_mocked_importable.json" 
