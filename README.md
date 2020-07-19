@@ -2,7 +2,7 @@
 
 This project was developed for the course "338010 Data Engineering Project - Building real time data pipelines" of [Prof. Dr. David Klotz](mailto:david.klotz@hdm-stuttgart.de?subject=[GitHub]Twilytics) at the Stuttgart Media University. The data pipeline was developed by [Alexander Stahl](mailto:as291@hdm-stuttgart.de?subject=[GitHub]Twilytics) and [Johannes Ströbele](mailto:js349@hdm-stuttgart.de?subject=[GitHub]Twilytics).
 
-The Twilytics dashboard provides insights into the trends on Twitter based on real time data. Users can get informations, for example, about how trends change on Twitter in a respective city or how the trends between cities correlate. For this samll university project, the cities Stuttgart and Berlin were analyzed.  
+The Twilytics dashboard provides insights into the trends on Twitter based on real time data. Users can get informations, for example, about how trends change on Twitter in a respective city or how the trends between cities correlate. For this small university project, the cities Stuttgart and Berlin were analyzed.  
 
 ## Repository Structure
 - dataproc: PySpark script for getting raw data from the MongoDB, processing Twitter data distributively, and inserting it into the PostgreSQL database (more information in the [README.md of the folder](https://github.com/Twilytics/Analytics-Application/tree/master/dataproc))
@@ -28,8 +28,6 @@ The approach how the project was realized can be seen [in the project goals wiki
 ## Lessons Learned
 _Are more detailed list can be found [here](https://github.com/Twilytics/Analytics-Application/wiki/Lessons-Learned)_
 * Google Cloud free limit of $300 will be reached in a short time, if something like a Dataproc is used (needed to setup a new one)
-
-provides a testversion with 300$ for 365 days, but there is also a limitation on the number of CPU you can use for VMs
 * Dataproc and Spark lack documentation, especially for the context of this project
 * Dataproc solution is a overkill for this project, but is good for larger projects due to the possibility to scale everything
 * [Grafana](https://grafana.com/) was chosen for building the dashboard due to its ease of use and fast setup (compared to [Dash](https://plotly.com/dash/) and [MEAN](https://en.wikipedia.org/wiki/MEAN_(solution_stack)))
